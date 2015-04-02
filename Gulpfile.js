@@ -17,7 +17,7 @@ var gulp    = require('gulp'), // Сообственно Gulp JS
 // Собираем CSS препроцессор
 gulp.task('css', function () {
     gulp.src('./app/src/sass/**/*.scss')
-        .pipe(stylus()) // Преобразуем в css
+        .pipe(css()) // Преобразуем в css
         .on('error', console.log) // Если есть ошибки, выводим и продолжаем
         .pipe(concat('style.css')) // склеиваем полученные css в style.css
         .pipe(gulp.dest('./app/dev/css')) // отправляем в версию для разработки

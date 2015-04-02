@@ -1,0 +1,120 @@
+
+
+header {
+  height: 8.375rem;
+  background: url(../img/header-bg.png) no-repeat; }
+
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0; }
+
+.blue-bg {
+  background: url(../img/background.png); }
+
+.row.full-width {
+  max-width: 100% !important; }
+
+nav {
+  padding: 2rem 0 1rem 0;
+  text-align: justify; }
+  nav .nav-holder {
+    text-align: justify;
+    line-height: 0;
+    text-align-last: justify; }
+    nav .nav-holder:after {
+      width: 100%;
+      height: 0px;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block; }
+  nav .nav-item {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; }
+    nav .nav-item:last-child {
+      margin: 0; }
+    nav .nav-item:hover::before {
+      background-color: #4a7ce0; }
+    nav .nav-item:hover .icon-holder {
+      background: #4a7ce0; }
+      nav .nav-item:hover .icon-holder::after {
+        background: url(../img/icon-shadow-hover.png) no-repeat; }
+    nav .nav-item:hover .nav-item-holder {
+      webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      border: 1px solid #6391ed; }
+      nav .nav-item:hover .nav-item-holder::after, nav .nav-item:hover .nav-item-holder::before {
+        -webkit-box-shadow: 0 0 20px black;
+        -moz-box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px black; }
+    nav .nav-item::before {
+      margin: 0 auto 2rem;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    nav .nav-item.active .icon-holder {
+      background: #4a7ce0; }
+      nav .nav-item.active .icon-holder::after {
+        background: url(../img/icon-shadow-hover.png) no-repeat; }
+    nav .nav-item.active .nav-item-holder {
+      webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      border: 1px solid #6391ed; }
+      nav .nav-item.active .nav-item-holder::after, nav .nav-item.active .nav-item-holder::before {
+        -webkit-box-shadow: 0 0 20px black;
+        -moz-box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px black; }
+    nav .nav-item .icon-holder {
+      background-color: #ec3a67;
+      text-align: center;
+      display: block;
+      padding: 1.5rem 0 0 0;
+      box-sizing: border-box;
+      height: 7rem;
+      border-radius: 50%;
+      width: 7rem;
+      position: relative;
+      margin: 0 auto 2rem; }
+      nav .nav-item .icon-holder::after {
+        position: absolute;
+        bottom: -1.5rem;
+        left: -.5rem;
+        display: block;
+        content: '';
+        background: url(../img/icon-shadow.png) no-repeat;
+        width: 9rem;
+        height: 1.4rem; }
+    nav .nav-item .nav-item-holder {
+      margin: 0;
+      display: block;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 1rem 1rem 0;
+      text-align: center;
+      background: #4a7ce0;
+      width: 100%;
+      height: 3.875rem;
+      position: relative;
+      webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      border: 1px solid #6391ed; }
+      nav .nav-item .nav-item-holder::after, nav .nav-item .nav-item-holder::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        top: 50%;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        -moz-border-radius: 100px/10px;
+        border-radius: 100px/10px; }

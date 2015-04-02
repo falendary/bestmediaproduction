@@ -3,16 +3,19 @@ html
     include ./modules/head
     body
         include ./modules/header
-        include ./modules/breadcrumbs
-        section.row
-            .small-12.medium-4-centered.large-4-centered.columns
-                h1.h1-blue-bg
-                    |ПОЧЕМУ НУЖЕН АУДИТ?
-                p.paralleloram-blue
-                    |BMP Media Audit не продаёт рекламу. BMP Media Audit помогает
-                    |клиенту покупать рекламу на наилучших условиях, пользуясь
-                    |знаниями и опытом медиа аудитора. Наша гарантия клиенту —
-                    |отсутствие заинтересованности.
+        .blue-bg
+            include ./modules/nav
+            include ./modules/breadcrumbs
+            section.row
+                .small-12.medium-4-centered.large-4-centered.columns
+                    h1.h1-blue-bg
+                        |ПОЧЕМУ НУЖЕН АУДИТ?
+                    p.paralleloram-blue
+                        |BMP Media Audit не продаёт рекламу. BMP Media Audit помогает
+                        |клиенту покупать рекламу на наилучших условиях, пользуясь
+                        |знаниями и опытом медиа аудитора. Наша гарантия клиенту —
+                        |отсутствие заинтересованности.
+                    img(src="img/scheme-1.png")
         section.row
             .small-12.medium-4-centered.large-4-centered.columns
                 h1.h1-white-bg
@@ -131,7 +134,7 @@ html
                 h3
                     |Диверсифицированный пул клиентов во всех ключевых
                     |категориях:
-                img(src="img/scheme1.png")
+                img(src="img/scheme-2.png")
         section.row
             h1
                 |Наши уникальные технологии

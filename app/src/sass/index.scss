@@ -1,0 +1,17 @@
+body
+{
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+.blue-bg
+{
+	background: url(../img/background.png);
+}
+.row
+{
+	&.full-width
+	{
+		max-width: 100% !important;
+	}
+}
