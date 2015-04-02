@@ -1,32 +1,38 @@
-//- Author: Sergey Zhitenev
-//- Licence: "MIT"
-//- Дата добавления модуля: 9.03.2015
-//- Версия: 0.0.1
-//- Description: footer.jade представляет модуль подвал сайта
-//- Содержит контактную информацию, телефон, email
-//- логотип, навигацию
-footer
-	.footer-white
-		.telephone-holder
-				p
-					|8-800-200-80-30
-				p
-					|+7(495)345-45-46
-			.email-holder
-				a(href="mailto:info@netnord.com")
-					|info@netnord.com
-			.address-holder
-				p
-					|41540, Московская обл., 
-					|пгт. Поварово,
-					|ул. Ленинградская, д.2А, 
-					|офис 14
-	.footer-blue
-		.inner-wrapper
-			.logo-holder
-				img(src="./images/m-footer-logo.png", alt="")
-			.footer-content
-				p.slogan
-					|НЭТ-НОРД: <br/>ваша безопасность — наша работа
-				p.copyright
-					|ООО «НЭТ-НОРД» Все права защищены.
+footer.row
+    .row.nav-footer-holder
+        .small-12.medium-12.large-12.columns
+            ul.nav-footer
+                li
+                    a(href="index.html")
+                        |О Компании
+                li
+                    a(href="work.html")
+                        |Схема работы
+                li
+                    a(href="news.html")
+                        |Новости
+                li
+                    a(href="partners.html")
+                        |Наши Партнеры
+                li
+                    a(href="contacts.html")
+                        |Контакты
+    .row.contact-info-holder
+        .small-4.medium-3.large-1.columns
+            p.copyright
+                |©2015, BMP Media Audit
+                |Все права защищены.
+        .small-4.medium-3.large-3.columns
+            a(href="#")
+                |Обратная связь
+        .small-4.medium-6.large-6.columns
+            dl
+                dt
+                    |Контактный телефон
+                dd
+                    |+7 (985) 222–83–64
+            dl
+                dt
+                    |Адрес
+                dd
+                    |г. Москва, 3-я Сокольническая улица, д.5, офис 27
