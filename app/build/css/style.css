@@ -46,13 +46,14 @@
     color: #78a4fe;
     margin: 0 0 1rem 0; }
 
-.map-holder {
+.row.map-holder {
   position: relative;
+  margin-bottom: 10rem;
   width: 100%;
   overflow: hidden;
   background: #e8e7e0;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4) 0 0 40px rgba(0, 0, 0, 0.1) inset; }
-  .map-holder::before, .map-holder::after {
+  .row.map-holder::before, .row.map-holder::after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -62,11 +63,11 @@
     left: 10px;
     right: 10px;
     border-radius: 100px/10px; }
-  .map-holder::after {
+  .row.map-holder::after {
     right: 10px;
     left: auto;
     -webkit-transform: skew(8deg) rotate(3deg); }
-  .map-holder div {
+  .row.map-holder div {
     padding: 0; }
 
 @font-face {

@@ -1,0 +1,37 @@
+doctype html
+html
+    include ./modules/head
+    body
+        include ./modules/header
+        .blue-bg
+            include ./modules/nav
+            include ./modules/breadcrumbs
+            section.row
+                .small-12.medium-4-centered.large-4-centered.columns
+                    h1.h1-blue-bg
+                        |НАШИ КОНТАКТЫ
+                    ul.our-contacts-holder
+                        li
+                            img(src="img/icon-red-phone.png")
+                            p
+                                |+7 (985) 222-83-64
+                        li
+                            img(src="img/icon-red-address.png")
+                            p
+                                |Москва, Ленинский проспект, 32а
+                        li
+                            img(src="img/icon-red-email.png")
+                            p
+                                |Обратная связь 
+                                a(href="mailto:akuzmin@bestmediapractises.com")
+                                    |akuzmin@bestmediapractises.com
+            section.map.row
+                .map-header.row
+                    .small-12.medium-4-centered.large-4-centered.columns
+                        h4
+                            |Карта проезда
+                .map-holder.row
+                    .small-12.medium-4-centered.large-4-centered.columns
+                        img(src="img/map.png")
+        include ./modules/footer
+        include ./modules/scripts

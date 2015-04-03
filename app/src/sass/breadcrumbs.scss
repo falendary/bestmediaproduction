@@ -1,0 +1,28 @@
+.breadcrumbs
+{
+    background: transparent;
+    border: transparent;
+    li
+    {
+        a
+        {
+            font-family: "PT_Sans-Web-Regular";
+            color: #719bf1;
+            text-decoration: underline;
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+        &::before
+        {
+            content: '';
+        }
+        &.active
+         {
+            font-size: 1rem;
+            font-family: "PT_Sans-Web-Regular";
+            text-transform: capitalize;
+            color: #fff;
+            text-decoration: none;
+         }
+    }
+}
