@@ -1,0 +1,53 @@
+.partners-section
+{
+    .parallelogram-blue.long
+    {
+        width: auto;
+        background: url(../img/parallelogram-blue-long.png) no-repeat;
+        margin-bottom: 0;
+        font-family: "PT_Sans-Narrow-Web-Bold";
+        span
+        {
+            color: #78a4fe;
+        }
+    }
+}
+.fancy-points-holder.blue
+{
+    .fancy-point
+    {
+        color: #6d97ea;
+    }
+}
+.partners-holder
+{
+    margin-bottom: 13rem;
+    .partners-logo
+    {
+        padding: .3rem 0 0 0;
+        img
+        {
+            vertical-align: top;
+        }
+    }
+    .partner
+    {
+        .partner-desc
+        {
+            color: #95b8ff;
+            margin: 0 0 1.3rem 0;
+            font-size: .875rem;
+            line-height: 1.5;
+            font-family: "PT_Sans-Web-Italic";
+        }
+        .partner-link
+        {
+            color: #fff;
+            text-decoration: underline;
+            &:hover
+            {
+                text-decoration: none;
+            }
+        }
+    }
+}

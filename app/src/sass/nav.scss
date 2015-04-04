@@ -25,6 +25,7 @@ nav
 		box-sizing: 				border-box;
 		position: 					relative;
 		z-index: 					1;
+        transition: 1s;
 		&:last-child
 		{
 			margin: 0;
@@ -41,6 +42,7 @@ nav
 			.icon-holder
 			{
 				background: 			#4a7ce0;
+                transition: .3s;
 				&::after
 				{
 					background: 		url(../img/icon-shadow-hover.png) no-repeat;
