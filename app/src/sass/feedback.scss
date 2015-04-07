@@ -1,0 +1,119 @@
+.reveal-modal
+{
+    background: #456dbd;
+    font-family: "PT_Sans-Web-Regular";
+    .close-reveal-modal
+    {
+        background: #6992e2;
+        border-radius: 50%;
+        width: 1.25rem;
+        padding: .25rem;
+        line-height: .5;
+        color: #fff;
+        box-sizing: border-box;
+        height: 1.25rem;
+        &:hover
+        {
+            background: #ec3a67;
+        }
+    }
+    label
+    {
+        color: #fff;
+        height: 2rem;
+        line-height: 2.4;
+    }
+    input[type="text"]
+    {
+        height: 2rem;
+        border: 2px solid transparent;
+    } 
+    input.error, textarea.error
+    {
+        border: 3px solid #ec3a67;
+        border-radius: 2px;
+    }
+    textarea
+    {
+        height: 5.625rem;
+        resize: none;
+        margin-bottom: 1rem;
+    }
+    .feedback-header
+    {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #608ade;
+        margin: 0 0 2rem 0;
+        font-family: "PT_Sans-Web-Regular";
+    }
+    label.error
+    {
+        position: absolute;
+        top: -2.375rem;
+        right: -25%;
+        height: auto;
+        background: #ec3a67;
+        line-height: 1;
+        font-size: 16px;
+        padding: 8px 10px;
+        & ~ input[type="text"]
+        {
+            border: 2px solid red;
+        }
+        &::before
+        {
+            position: absolute;
+            display: inline-block;
+            border-left: 6px solid transparent;
+            border-top: 6px solid #ec3a67;
+            border-right: 6px solid transparent;
+            left: 45%;
+            top: 100%;  
+            content: '';
+        }
+    }
+    .send-feedback
+    {
+        background: #6992e2;
+        font-family: "PT_Sans-Web-Regular";
+        color: #fff;
+        font-size: .89rem;
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+        height: 2.25rem;
+        width: 8.5rem;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+        padding: .2375rem 2.25rem .125rem;
+        &:hover
+        {
+            background: #ec3a67;
+        }
+        &::before
+        {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top: 0 solid transparent;
+            border-left: 2rem solid #456dbd;
+            border-bottom: 4rem solid transparent;
+        }
+        &::after
+        {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-top: 4rem solid transparent;
+            border-right: 2rem solid #456dbd;
+            border-left: 0 solid transparent;
+        }
+    }
+}

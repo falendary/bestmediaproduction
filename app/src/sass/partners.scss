@@ -3,7 +3,7 @@
     .parallelogram-blue.long
     {
         width: auto;
-        background: url(../img/parallelogram-blue-long.png) no-repeat;
+        background: url(../images/parallelogram-blue-long.png) no-repeat;
         margin-bottom: 0;
         font-family: "PT_Sans-Narrow-Web-Bold";
         span
@@ -22,6 +22,7 @@
 .partners-holder
 {
     margin-bottom: 13rem;
+    list-style-type: none;
     .partners-logo
     {
         padding: .3rem 0 0 0;

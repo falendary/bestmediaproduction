@@ -23,9 +23,13 @@ nav
 		color: 						#fff;
 		text-transform: 			uppercase;
 		box-sizing: 				border-box;
-		position: 					relative;
+    	position: 					relative;
 		z-index: 					1;
-        transition: 1s;
+        .icon-holder
+        {
+            transition: background-color 500ms ease-out;
+            -webkit-transition: background-color 500ms ease-out;
+        }
 		&:last-child
 		{
 			margin: 0;
@@ -42,10 +46,9 @@ nav
 			.icon-holder
 			{
 				background: 			#4a7ce0;
-                transition: .3s;
 				&::after
 				{
-					background: 		url(../img/icon-shadow-hover.png) no-repeat;
+					background: 		url(../images/icon-shadow-hover.png) no-repeat;
 				}	
 			}	
 			.nav-item-holder
@@ -75,7 +78,7 @@ nav
 				background: 			#4a7ce0;	
 				&::after
 				{
-					background: 		url(../img/icon-shadow-hover.png) no-repeat;
+					background: 		url(../images/icon-shadow-hover.png) no-repeat;
 				}	
 			}
 			.nav-item-holder
@@ -112,7 +115,7 @@ nav
 				left:  				-.5rem;
 				display: 			block;
 				content: 			'';
-				background: 		url(../img/icon-shadow.png) no-repeat;
+				background: 		url(../images/icon-shadow.png) no-repeat;
 				width: 				9rem;
 				height: 			1.4rem;
 			}

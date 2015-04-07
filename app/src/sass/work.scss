@@ -1,0 +1,146 @@
+.scheme-holder
+{
+    counter-reset: list;
+}
+.mark
+{
+    .mark-img
+    {
+        width: 25%;
+    }
+    .mark-description
+    {
+        width: 75%;
+        padding-left: 2rem;
+        position: relative;
+        &::before
+        {
+            position: absolute;
+            left: -.5rem;
+            top: -.5rem;
+            content: counter(list)".";
+            font-weight: bold;
+            color: #ec3a67;
+            font-size: 2.5rem;
+            counter-increment: list
+        }
+    }
+    &:last-child
+    {
+        width: 100%;
+        .mark-img
+        {
+            width: 12.5%;
+        }
+    }
+    .mark-header
+    {
+        color: #78a4fe;
+        text-transform: uppercase;
+        font-family: "PT_Sans-Web-Regular";
+    }
+    p
+    {
+        color: #fff;
+        font-family: "PT_Sans-Web-Italic";
+    }
+}
+@media only screen and (max-width: 93.25rem)
+{
+    .mark
+    {
+        .mark-description
+        {
+            p
+            {
+                color: #1f1f1f;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1480px) and (max-width: 108rem)
+{
+    .mark:nth-last-child(-n+3)
+    {
+        .mark-description
+        {
+            p
+            {
+                color: #1f1f1f;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 116.625rem)
+{
+    .mark
+    {
+        .mark-description
+        {
+            p
+            {
+                color: #fff;
+            }
+        }
+        &:last-child
+        {
+            .mark-description
+            {
+                p
+                {
+                    color: #1f1f1f;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 131.625rem)
+{
+    .mark
+    {
+        .mark-description
+        {
+            p
+            {
+                color: #fff;
+            }
+        }
+        &:last-child
+        {
+            .mark-description
+            {
+                p
+                {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 46,875rem)
+{
+    .mark
+    {
+        .mark-img
+        {
+            width: 100%;
+            text-align: center;
+        }
+        .mark-description
+        {
+            width: 100%;
+            padding-left: 4rem;
+            &::before
+            {
+                left: 1rem;
+            }
+        }
+        &:last-child
+        {
+            .mark-img
+            {
+                width: 100%;
+            }
+        }
+    }
+}

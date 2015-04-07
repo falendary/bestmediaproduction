@@ -3,8 +3,9 @@ body
     font-size: 100%;
     margin: 0;
     padding: 0;
-    background: #e8e7e0 url(../img/background.png) 0 2rem no-repeat;
-    background-size: contain;
+    background: #e8e7e0 url(../images/background.png) 50% 2rem repeat-x;
+    //background: #e8e7e0 url(../images/background.png) 0 2rem no-repeat;
+    //background-size: contain;
 }
 .h1-blue-bg
 {
@@ -16,7 +17,7 @@ body
 }
 p.parallelogram-blue 
 {
-    background: url(../img/parallelogram-blue.png) no-repeat;
+    background: url(../images/parallelogram-blue.png) no-repeat;
     position: relative;
     color: #fff;
     box-sizing: border-box;

@@ -1,0 +1,49 @@
+#feedback-modal.reveal-modal.small(data-reveal, aria-labelledby, aria-hidden="true" role="dialog")
+    h2.feedback-header
+        |Обратная связь
+    form(action="")
+        .row
+            .small-10
+                .row
+                    .small-4.columns
+                        label.right
+                            |Имя*
+                    .small-8.columns
+                        input(type="text")
+                .row
+                    .small-4.columns
+                        label.right
+                            |Фамилия
+                    .small-8.columns
+                        input(type="text").error
+                        label.error
+                            |Это поле нужно заполнить
+                .row
+                    .small-4.columns
+                        label.right
+                            |Email*
+                    .small-8.columns
+                        input(type="text")
+                .row
+                    .small-4.columns
+                        label.right
+                            |Сообщение*
+                    .small-8.columns
+                        textarea.error
+                        label.error
+                            |Это поле нужно заполнить
+                .row
+                    .small-4.columns
+                        label.right
+                            |Введите цифры*
+                    .small-8.columns
+                        .row
+                            .small-4.columns
+                                img(src="images/captcha-img.png")
+                            .small-8.columns
+                                input(type="text")
+        .row.text-center
+            button(type="submit").button.send-feedback
+                |Отправить
+    a.close-reveal-modal(aria-label="Close")
+        |&#215;
