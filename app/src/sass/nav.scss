@@ -154,3 +154,13 @@ nav
 		}
 	}
 }
+@media only screen and (max-width: 460px)
+{
+    .nav-holder
+    {
+        .icon-holder
+        {
+            display: none;
+        }
+    }
+}

@@ -32,6 +32,10 @@
         }
     }
 }
+.map.row
+{
+    position: relative;
+}
 .map-header
 {
     text-transform: uppercase;
@@ -44,30 +48,23 @@
 }
 .row.map-holder
 { 
-    position: relative;
     margin-bottom: 10rem;
     width: 100%;
     overflow: hidden;
     background: #e8e7e0;
-    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.4) 0 0 40px rgba(0,0,0,.1) inset;
-    &::before, &::after
+    &::before
     {
         content: "";
         position: absolute;
         z-index: -1;
         -webkit-box-shadow: 0 0 20px rgba(0,0,0,.8);
-        top: 50%;
-        bottom: 0;
-        left: 10px;
-        right: 10px;
+        display: block;
+        width: 70%;
+        height: 2px;
+        bottom: 164px;
+        left: 12.5%;
         border-radius: 100px / 10px;
     }
-    &::after
-    {
-        right: 10px;
-        left: auto;
-            -webkit-transform: skew(8deg) rotate(3deg);
-}
     div
     {
         padding: 0;
