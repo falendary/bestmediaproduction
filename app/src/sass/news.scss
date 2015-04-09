@@ -18,7 +18,7 @@
         {
             .date
             {
-                background: #cdcdcd;
+                background: #cdcdcd; 
                 font-family: "PT_Sans-Web-Regular";
                 color: #fff;
                 font-size: .9rem;
@@ -154,7 +154,63 @@
                             }
                             .description
                             {
-                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                &:first-child
+                {
+                    border-right: 0;
+                }
+                &:nth-child(2)
+                {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px)
+{
+    .news-list-holder
+    {
+        .news-list
+        {
+            .news-list-item-holder
+            {
+                &:nth-child(3),&:nth-child(4)
+                {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    margin-bottom: 2rem;
+                }
+                &:first-child,&:nth-child(2)
+                {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    margin-bottom: 2rem;
+                    .news-list-item
+                    {
+                        padding-bottom: 0;
+                        .image-holder
+                        {
+                            padding-bottom: 0;
+                        }
+                        .content-holder
+                        {
+                            padding-bottom: 0;
+                            .date
+                            {
+                                background: transparent
+                                    url(../images/parallelogram-date.png)
+                                    no-repeat;
+                                &::before, &::after
+                                {
+                                    border: 0;
+                                }
+                            }
+                            .description
+                            {
                             }
                         }
                     }
@@ -183,7 +239,6 @@
                 {
                     padding-top: 2rem;
                     padding-bottom: 2rem;
-                    border: 1px solid #4c6eae;
                     margin-bottom: 2rem;
                     .news-list-item
                     {
@@ -270,7 +325,7 @@
 //                            .description
 //                            {
 //                                color: #fff;
-//                            }
+//                         r  }
 //                        }
 //                    }
 //                }
@@ -336,7 +391,7 @@
     }
     .news-page-date
     {
-        background: #bebebe;
+        background: url(../images/grey-date.png) no-repeat;
         font-family: "PT_Sans-Web-Regular";
         color: #fff;
         font-size: .9rem;
@@ -345,28 +400,6 @@
         display: inline-block;
         position: relative;
         white-space: nowrap;
-        padding: .4375rem 2.25rem .325rem;
-        &::before
-        {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-top: 0 solid transparent;
-            border-left: 1rem solid #e8e7e0;
-            border-bottom: 2rem solid transparent;
-        }
-        &::after
-        {
-            content: '';
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-            border-top: 2rem solid transparent;
-            border-right: 1rem solid #e8e7e0;
-            border-left: 0 solid transparent;
-        }
+        padding: .4375rem 1.25rem .325rem;
     }
 }

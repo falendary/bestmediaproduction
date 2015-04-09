@@ -45,4 +45,33 @@
         font-family: "PT_Sans-Web-Italic";
     }
 }
-
+@media only screen and (max-width: 375px)
+{
+    .mark .mark-description
+    {
+        width: 100%;
+        padding: 0;
+        p
+        {
+            padding-left: 2.5rem;
+        }
+    }
+    .mark .mark-description::before
+    {
+        top: 2rem;
+        left: 0;
+    }
+    .mark .mark-header
+    {
+        text-align: center;
+    }
+    .mark .mark-img
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .mark:last-child .mark-img
+    {
+        width: 100%;
+    }
+}
