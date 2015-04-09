@@ -158,9 +158,13 @@ nav
 {
     .nav-holder
     {
-        .icon-holder
+        .nav-item
         {
-            display: none;
+            width: 100%;
+            .icon-holder
+            {
+                display: none;
+            }
         }
     }
 }

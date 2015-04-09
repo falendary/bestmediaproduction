@@ -5,7 +5,7 @@
     li
     {
         width: 26rem;
-        margin: 0 auto 1rem;
+        margin: 0 auto .1rem;
         &::after
         {
             content: '';
@@ -68,5 +68,23 @@
     div
     {
         padding: 0;
+    }
+}
+@media only screen and (max-width: 320px)
+{
+    .our-contacts-holder
+    {
+        margin-top: -1rem;
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+    .our-contacts-holder li p
+    {
+        margin-bottom: .9rem;
+    } 
+    .our-contacts-holder li:last-child p
+    {
+        text-indent: -7rem;
+        overflow: hidden;
     }
 }

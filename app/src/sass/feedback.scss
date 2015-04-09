@@ -20,18 +20,23 @@
     label
     {
         color: #fff;
+        text-align: right;
         height: 2rem;
         line-height: 2.4;
     }
     input[type="text"]
     {
-        height: 2rem;
+        height: 2.5rem;
         border: 2px solid transparent;
     } 
     input.error, textarea.error
     {
         border: 3px solid #ec3a67;
         border-radius: 2px;
+    }
+    input.error
+    {
+        margin-bottom: 1rem;
     }
     textarea
     {
@@ -52,7 +57,7 @@
     {
         position: absolute;
         top: -2.375rem;
-        right: -25%;
+        right: 0;
         height: auto;
         background: #ec3a67;
         line-height: 1;
@@ -114,6 +119,23 @@
             border-top: 4rem solid transparent;
             border-right: 2rem solid #456dbd;
             border-left: 0 solid transparent;
+        }
+    }
+}
+@media only screen and (max-width: 320px)
+{
+    .reveal-modal
+    {
+        width: 90%;
+        margin-left: -45%;
+        label
+        {
+            font-size: 1rem;
+            text-align: left;
+        }
+        .send-feedback
+        {
+            width: 100%;
         }
     }
 }

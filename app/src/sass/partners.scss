@@ -21,6 +21,7 @@
 }
 .partners-holder
 {
+    margin: 0;
     margin-bottom: 13rem;
     list-style-type: none;
     .partners-logo
@@ -35,7 +36,8 @@
     {
         .partner-desc
         {
-            color: #95b8ff;
+            //color: #95b8ff;
+            color: #1f1f1f;
             margin: 0 0 1.3rem 0;
             font-size: .875rem;
             line-height: 1.5;
@@ -43,12 +45,31 @@
         }
         .partner-link
         {
-            color: #fff;
+            //color: #fff;
+            color: #78a4fe;
             text-decoration: underline;
             &:hover
             {
                 text-decoration: none;
             }
         }
+    }
+}
+@media only screen and (max-width: 320px)
+{
+    .partners-section p.parallelogram-blue.long
+    {
+        background-image: none;
+        background-color: #305085;
+
+    }
+    .partners-holder .partner .partner-desc
+    {
+        margin-top: 1rem;
+        color: #1f1f1f;
+    }
+    .partners-holder .partner .partner-link
+    {
+        color: #78a4fe;
     }
 }

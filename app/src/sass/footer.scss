@@ -73,11 +73,14 @@ footer
         {
             color: #afae9d;
             font-family: "PT_Sans-Web-Regular";
+            text-align: right;
+            margin-right: -15px;
         }
         .feedback
         {
             float: left;
             color: #2971bb;
+            margin-left: -15px;
             line-height: 2.5;
             text-decoration: underline;
             &:hover
@@ -120,5 +123,83 @@ footer
                 margin: 0;
             }
         }
+    }
+}
+@media only screen and (max-width: 460px)
+{
+    .nav-footer-holder
+    {
+        .fancy-shadow
+        {
+            display: none;
+        }
+    }
+    .nav-footer
+    {
+        .nav-footer-item
+        {
+            width: 100%;
+        }   
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    footer .contact-info-holder dl dd
+    {
+        width: 55%;
+    }
+    footer .contact-info-holder dl dt
+    {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 728px)
+{
+    footer .nav-footer-holder .fancy-shadow::before
+    {
+        bottom: 170px;
+    }
+}
+@media only screen and (max-width: 634px)
+{
+    .copyright
+    {
+        text-align: center;
+    }
+    footer .contact-info-holder .feedback
+    {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 11rem;
+    }
+}
+@media only screen and (max-width: 320px)
+{
+    footer .contact-info-holder .feedback
+    {
+        float: none;
+        width: 11rem;
+        margin: 0 auto 1rem;
+        display: block;
+    }
+    footer .contact-info-holder dl:first-child dd
+    {
+        font-size: 1.5rem;
+    }
+    footer .contact-info-holder dl dt
+    {
+        display: none;
+    }   
+    footer .contact-info-holder dl dd
+    {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    footer .contact-info-holder .copyright
+    {
+        line-height: 1.2;
+        text-align: center;
     }
 }
