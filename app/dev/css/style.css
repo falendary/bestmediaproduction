@@ -567,6 +567,13 @@ p.parallelogram-blue {
   img.scheme-resp {
     display: block; } }
 
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  img.scheme-1 {
+    display: none; }
+  img.scheme-resp {
+    display: block;
+    margin: 0 auto; } }
+
 nav {
   padding: 2rem 0 1rem 0;
   text-align: justify; }
@@ -989,6 +996,44 @@ nav {
       padding-left: 2.5rem; }
   .mark .mark-description::before {
     top: 2rem;
+    left: 0; }
+  .mark .mark-header {
+    text-align: center; }
+  .mark .mark-img {
+    width: 100%;
+    text-align: center; }
+  .mark:last-child .mark-img {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-size: cover; } }
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  header {
+    background-size: cover; }
+  .mark .mark-description {
+    width: 100%;
+    padding: 0; }
+    .mark .mark-description p {
+      padding-left: 2.5rem; }
+  .breadcrumbs li.active {
+    color: #1f1f1f; }
+  .partners-section .parallelogram-blue.long {
+    background-image: none;
+    background-color: #294A7F;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .our-contacts-holder li p {
+    color: #1f1f1f; }
+  .partners-holder .partners-logo img {
+    float: none !important;
+    margin: 0 auto 1rem;
+    display: block; }
+  p.parallelogram-blue {
+    background-size: cover; }
+  .mark .mark-description::before {
+    top: .9rem;
     left: 0; }
   .mark .mark-header {
     text-align: center; }
