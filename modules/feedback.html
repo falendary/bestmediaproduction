@@ -1,0 +1,60 @@
+
+<div id="feedback-modal" data-reveal="data-reveal" aria-labelledby="aria-labelledby" aria-hidden="true" role="dialog" class="reveal-modal small">
+  <h2 class="feedback-header">Обратная связь</h2>
+  <form action="">
+    <div class="row">
+      <div class="small-12">
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Имя*</label>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <input type="text"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Фамилия</label>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <input type="text" class="error"/>
+            <label class="error">Это поле нужно заполнить</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Email*</label>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <input type="text"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Сообщение*</label>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <textarea class="error"></textarea>
+            <label class="error">Это поле нужно заполнить</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Введите цифры*</label>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <div class="row">
+              <div class="small-4 columns"><img src="images/captcha-img.png"/></div>
+              <div class="small-8 columns">
+                <input type="text"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <button type="submit" class="button send-feedback">Отправить</button>
+    </div>
+  </form><a aria-label="Close" class="close-reveal-modal">&#215;</a>
+</div>
